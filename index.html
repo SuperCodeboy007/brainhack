@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Hack - Focus & Sleep Music</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="bg-animation">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="40" height="40">
+                        <defs>
+                            <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00f0ff"/>
+                                <stop offset="100%" style="stop-color:#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#brainGradient)" d="M50 10c-22 0-40 18-40 40s18 40 40 40 40-18 40-40-18-40-40-40zm0 70c-16.5 0-30-13.5-30-30s13.5-30 30-30 30 13.5 30 30-13.5 30-30 30z"/>
+                        <circle cx="50" cy="50" r="15" fill="url(#brainGradient)" opacity="0.8"/>
+                        <circle cx="50" cy="50" r="8" fill="#0a0a0f"/>
+                    </svg>
+                </div>
+                <span class="logo-text">BRAIN HACK</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="sleeping">Sleep</a>
+                <a href="#" class="nav-link" data-page="focus">Focus</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Page -->
+            <section id="home-page" class="page active">
+                <div class="hero">
+                    <h1 class="hero-title">
+                        <span class="glitch" data-text="BRAIN HACK">BRAIN HACK</span>
+                    </h1>
+                    <p class="hero-subtitle">Scientifically Optimized Audio for Peak Mental Performance</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-navigate="sleeping">
+                            <span class="btn-icon">🌙</span>
+                            Sleep Music
+                        </button>
+                        <button class="btn btn-secondary" data-navigate="focus">
+                            <span class="btn-icon">⚡</span>
+                            Focus Music
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recent Tracks Section -->
+                <div class="recent-section" id="recent-section">
+                    <h2 class="section-title">
+                        <span class="title-icon">🕐</span>
+                        Recent Tracks
+                    </h2>
+                    <div class="track-grid" id="recent-tracks">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features-section">
+                    <h2 class="section-title">
+                        <span class="title-icon">✨</span>
+                        Why Brain Hack?
+                    </h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🧠</div>
+                            <h3>Neuroscience-Backed</h3>
+                            <p>Curated tracks based on scientific research for optimal brain function</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Enhanced Focus</h3>
+                            <p>Binaural beats and ambient sounds designed to boost concentration</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">😴</div>
+                            <h3>Better Sleep</h3>
+                            <p>Relaxing soundscapes to help you fall asleep faster and deeper</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sleeping Music Page -->
+            <section id="sleeping-page" class="page">
+                <div class="page-header">
+                    <h1 class="page-title">
+                        <span class="title-icon">🌙</span>
+                        Sleep Music
+                    </h1>
+                    <p class="page-description">Drift into peaceful slumber with our scientifically crafted sleep tracks</p>
+                </div>
+                <div class="track-grid" id="sleeping-tracks">
+                    <!-- Dynamically populated -->
+                </div>
+            </section>
+
+            <!-- Focus Music Page -->
+            <section id="focus-page" class="page">
+                <div class="page-header">
+                    <h1 class="page-title">
+                        <span class="title-icon">⚡</span>
+                        Focus Music
+                    </h1>
+                    <p class="page-description">Enhance your concentration with brain-boosting audio frequencies</p>
+                </div>
+                <div class="track-grid" id="focus-tracks">
+                    <!-- Dynamically populated -->
+                </div>
+            </section>
+
+            <!-- Player Page -->
+            <section id="player-page" class="page">
+                <div class="player-container">
+                    <button class="back-btn" id="back-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                        </svg>
+                        Back
+                    </button>
+                    
+                    <div class="player-artwork">
+                        <div class="artwork-container">
+                            <div class="artwork-glow"></div>
+                            <div class="artwork-inner" id="player-artwork">
+                                <div class="vinyl-record">
+                                    <div class="vinyl-label"></div>
+                                </div>
+                            </div>
+                            <div class="artwork-ring"></div>
+                        </div>
+                    </div>
+
+                    <div class="player-info">
+                        <h2 class="player-title" id="player-title">Track Name</h2>
+                        <p class="player-genre" id="player-genre">Genre</p>
+                    </div>
+
+                    <div class="player-progress">
+                        <div class="progress-bar" id="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                            <div class="progress-handle" id="progress-handle"></div>
+                        </div>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="duration">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="player-controls">
+                        <button class="control-btn" id="shuffle-btn">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/>
+                            </svg>
+                        </button>
+                        <button class="control-btn" id="prev-btn">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path fill="currentColor" d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                            </svg>
+                        </button>
+                        <button class="control-btn play-btn" id="play-btn">
+                            <svg class="play-icon" viewBox="0 0 24 24" width="40" height="40">
+                                <path fill="currentColor" d="M8 5v14l11-7z"/>
+                            </svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" width="40" height="40" style="display:none;">
+                                <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                            </svg>
+                        </button>
+                        <button class="control-btn" id="next-btn">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <path fill="currentColor" d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                            </svg>
+                        </button>
+                        <button class="control-btn" id="repeat-btn">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="volume-control">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                        </svg>
+                        <div class="volume-bar" id="volume-bar">
+                            <div class="volume-fill" id="volume-fill"></div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendation Section -->
+                    <div class="recommendation-section" id="recommendation-section">
+                        <h3 class="recommendation-title">Recommended for You</h3>
+                        <div class="recommendation-card" id="recommendation-card">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Audio Element -->
+        <audio id="audio-player"></audio>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
