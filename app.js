@@ -17,7 +17,12 @@ const musicLibrary = {
         { id: 'sleep-10', name: 'Lunaris', file: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663274665583/BDfajItwqGxsICYT.mp3', genre: 'sleeping' }
     ],
     focus: [
-        // Focus tracks will be added later
+        { id: 'focus-1', name: 'Aegean Sunset', file: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663274665583/XQqllAXguMczbhKu.mp3', genre: 'focus' },
+        { id: 'focus-2', name: 'Against the Current', file: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663274665583/VLKKBybWCUDMxXzL.mp3', genre: 'focus' },
+        { id: 'focus-3', name: 'Alluvium', file: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663274665583/ebcUxxKPqRCPtDqG.mp3', genre: 'focus' },
+        { id: 'focus-4', name: 'Boreal Ridge', file: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663274665583/UVEhWgfOHBdruuou.mp3', genre: 'focus' },
+        { id: 'focus-5', name: 'Boreal Ridge (Alt)', file: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663274665583/YiiMBtgANOOdKRew.mp3', genre: 'focus' },
+        { id: 'focus-6', name: 'Broad Palmes', file: 'https://files.manuscdn.com/user_upload_by_module/session_file/310519663274665583/BZGVYYlyLPlCYAol.mp3', genre: 'focus' }
     ]
 };
 
